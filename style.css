@@ -1,5 +1,4 @@
-/* Importación de fuentes elegantes */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 * {
     margin: 0;
@@ -8,104 +7,86 @@
 }
 
 body {
-    background-color: #121212; /* Fondo oscuro */
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&q=80&w=1920'); /* Imagen de fondo opcional */
-    background-size: cover;
-    background-position: center;
+    background-color: #0a0a0a; /* Fondo casi negro */
     color: white;
-    font-family: 'Roboto', sans-serif;
-    height: 100-vh;
-    display: flex;
-    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    overflow: hidden;
 }
 
-/* Header y Menú */
 header {
-    padding: 2rem;
+    padding: 40px;
     display: flex;
-    align-items: center;
     justify-content: center;
-    position: relative;
+    align-items: center;
 }
 
 .menu-icon {
     position: absolute;
-    left: 2rem;
-    cursor: pointer;
+    left: 40px;
 }
 
 .menu-icon span {
     display: block;
-    width: 25px;
-    height: 2px;
+    width: 30px;
+    height: 1px;
     background-color: white;
-    margin: 5px 0;
+    margin: 8px 0;
 }
 
 .logo {
-    font-family: 'Playfair Display', serif;
-    font-size: 3rem;
-    letter-spacing: 5px;
-    font-weight: 700;
+    font-size: 2.5rem;
+    letter-spacing: 8px;
+    font-weight: 400;
 }
 
-/* Sección Principal */
 .hero {
-    flex: 1;
+    height: calc(100vh - 150px);
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     text-align: center;
-    padding-bottom: 5rem;
 }
 
-.quote-container {
-    position: relative;
-    padding: 0 4rem;
-    margin-bottom: 1rem;
+.quote-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.bracket {
+    font-size: 12rem;
+    font-weight: 100;
+    color: #333; /* Color gris oscuro para los corchetes */
+    line-height: 1;
 }
 
 .main-quote {
-    font-size: 4.5rem;
-    font-weight: 700;
-    line-height: 1;
-    text-transform: lowercase;
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
 }
-
-/* Los corchetes decorativos */
-.bracket-left, .bracket-right {
-    position: absolute;
-    font-size: 10rem;
-    font-weight: 100;
-    color: rgba(255, 255, 255, 0.2);
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.bracket-left { left: -10px; }
-.bracket-right { right: -10px; }
 
 .slogan {
     font-style: italic;
-    font-weight: 300;
+    color: #888;
+    margin-bottom: 40px;
     font-size: 1.2rem;
-    margin-bottom: 3rem;
-    color: #cccccc;
 }
 
-/* Botón */
 .cta-button {
-    text-decoration: none;
+    display: inline-block;
     color: white;
-    border: 1px solid white;
-    padding: 10px 30px;
-    font-size: 0.9rem;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
+    text-decoration: none;
+    border: 1px solid #444;
+    padding: 12px 30px;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    transition: 0.3s;
 }
 
 .cta-button:hover {
-    background-color: white;
+    background: white;
     color: black;
 }
